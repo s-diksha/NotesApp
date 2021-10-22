@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#E8E8E8"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.AddNotesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/notes_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/edit_text_bg"
+            android:padding="15dp"
+            android:fontFamily="@font/product_sans_regular"
+            android:hint="Title"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="620dp"
+            android:layout_margin="16dp"
+            android:gravity="start"
+            android:id="@+id/notes_data"
+            android:background="@drawable/edit_text_bg"
+            android:padding="15dp"
+            android:fontFamily="@font/product_sans_regular"
+            android:hint="Notes"
+            />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="match_parent"
+        android:id="@+id/notes_add_btn"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/check_btn"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/red"
+        android:layout_margin="20dp"
+        />
+</RelativeLayout>
